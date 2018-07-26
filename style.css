@@ -1,21 +1,63 @@
-/*===============================*/
+/*==Parent Container=================================*/
+.parent-container {
+  border: black solid 2px;
+}
 
 
 
+/*==Sidebar===========================================*/
+.sidebar {
+  border: red solid 2px;
+}
 
-/*===============================*/
+/*==Content Main Box==================================*/
+.content-box {
+  border: green solid 2px;
+}
+
+/*==Search Box========================================*/
+.search-box {
+  border: blue solid 2px;
+}
+
+/*==Title Box=========================================*/
+.title-box {
+  border: yellow solid 2px;
+}
+
+/*==Navigation Bar=====================================*/
+.nav-bar-box {
+  border: purple solid 2px;
+}
+
+/*===Graphs============================================*/
+.graphs-box {
+  border: black solid 2px;
+}
 
 
-/*===============================*/
+/*===Description/Links Box=============================*/
+.descr-links-box {
+  border: green solid 2px;
+}
 
 
-/*===============================*/
+/*===Job Description===================================*/
+.job-description-box {
+  border: blue solid 2px;
+}
+
+/*===Links=============================================*/
+.links-box {
+  border: yellow solid 2px;
+}
 
 
-/*===============================*/
+/*===Media Queries======================================*/
+@media(max-width: 640px){
+
+  
+}
 
 
-/*===============================*/
 
-
-/*===============================*/
