@@ -18,6 +18,30 @@
   align-items: start;
 }
 
+.profile-pic {
+  border-radius: 42px;
+  height: 77px;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.name-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+    align-self: center;
+}
+
+h4 {
+  color: #FFFFFF;
+}
+
+.dropdown-icon {
+    height: 12px;
+    margin-left: 7px;
+}
+
 aside p{
   color: #FFFFFF;
    padding: 30px 19px 0px;
@@ -54,6 +78,7 @@ input {
   color: #FFFFFF;
   background-color: gray;
   display: block;
+  font-size: .7rem;
   align-self: flex-start;
 }
 .sidebar-icon {
@@ -77,16 +102,106 @@ input {
 .search-box {
   border: blue solid 2px;
   grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
 }
 
+input::placeholder{
+    background-image: url(images/search-gray.png);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    height: 20px;
+}
+
+.search-menu {
+  grid-column: 1;
+}
+
+.search-input {
+  grid-column: 2;  
+}
+
+.div-search-btns {
+  grid-column: 3;
+}
+
+.search-icon {
+  height: 22px;
+}
+
+
 /*==Title Box=========================================*/
+
 .title-box {
   border: yellow solid 2px;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 40% 20% 10% 10% 10% 10%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 15px 50px 35px;
+}
 
+h1 {
+    margin: 0px 0px 0px 20px;
+    grid-row: 2;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.location-post {
+  grid-row: 3/4;
+}
+
+.location-post-icon {
+  display: inline;
+  position: relative;
+  height: 20px;
+  margin-left: 20px;
+  top: 5px;
+}
+.location-post-text{
+    display: inline;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.title-btns-box {
+  width: 277px;
+  height: 45px;
+  grid-row: 3;
+  align-self: end;
+  justify-self: end;
+}
+
+.btn-icon {
+  height: 15px;
+  margin-top: 4px;
+}
+
+.circle-btn {
+  border-radius: 55px;
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+}
+
+.circle-icon {
+  padding-right: 6px;
+  padding-top: 3px;
+}
+
+.open-btn {
+  border-radius: 55px;
+  height: 35px;
+  width: 100px;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  line-height: 2.3;
+  text-align: center;
+}
+
+.open-txt {
+  font-size: 0.8rem;
 }
 
 /*==Navigation Bar=====================================*/
@@ -118,9 +233,45 @@ input {
 
 
 /*===Job Description===================================*/
+.edit-btn {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px 0px 10px 14px;
+    background: #1E88E5;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    /* text-align: left; */
+    padding: 1.15rem 1.2rem;
+    width: 25%;
+}
+
+.edit-icon {
+  width: 25px;
+}
+
 .job-descr-box {
   border: blue solid 2px;
   grid-column: 1;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.job-descr-box h2 {
+  margin: 10px 0px 10px 14px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.job-descr-box h3 {
+  margin: 10px 0px 10px 14px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.job-descr-box p {
+  margin: 10px 0px 10px 20px;
 }
 
 /*===Links=============================================*/
