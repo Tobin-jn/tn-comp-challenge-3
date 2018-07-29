@@ -71,7 +71,7 @@ aside p{
   padding: 0.55rem 1.2rem;
   width: 100%;
 }
-input {
+.checkbox {
   margin: 10px;
 }
 .side-item {
@@ -103,32 +103,56 @@ input {
   border: blue solid 2px;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 10% 60% 30%;
+  grid-template-columns: 8% 62% 30%;
 }
 
 input::placeholder{
     background-image: url(images/search-gray.png);
     background-repeat: no-repeat;
-    text-indent: 20px;
-    height: 20px;
+    text-indent: 30px;
+    height: 40px;
+    font-size: 1rem;
 }
 
 .search-menu {
   grid-column: 1;
+
 }
 
 .search-input {
-  grid-column: 2;  
+  grid-column: 2;
+  height: 50px;
+  font-size: 1rem;
+  text-indent: 30px;
+  border: hidden;
+  margin-top: 5px;
 }
 
 .div-search-btns {
   grid-column: 3;
+  justify-self: right;
+  align-self: center;
+  margin-right: 20px;
 }
 
 .search-icon {
-  height: 22px;
+  height: 25px;
+  justify-self: center;
+  align-self: center;
+}
+.plusone {
+  /*border: black solid 1px;*/
+  padding: 16px;
 }
 
+.schedule {
+  /*border: black solid 1px;*/
+    padding: 16px;
+}
+.menu-grid {
+  /*border: black solid 1px;*/
+    padding: 16px;
+}
 
 /*==Title Box=========================================*/
 
@@ -167,7 +191,7 @@ h1 {
 
 .title-btns-box {
   width: 277px;
-  height: 45px;
+  height: 50px;
   grid-row: 3;
   align-self: end;
   justify-self: end;
@@ -209,10 +233,18 @@ h1 {
   border: purple solid 2px;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 40px;
+  align-items: start;
   justify-items: center;
 }
+ .nav-bar-box p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+ }
+
 
 /*===Graphs============================================*/
 .graphs-box {
@@ -236,33 +268,39 @@ h1 {
 .edit-btn {
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 10px 0px 10px 14px;
-    background: #1E88E5;
-    color: white;
-    font-family: system-ui, sans-serif;
-    font-size: 1rem;
-    line-height: 1.2;
-    white-space: nowrap;
-    /* text-align: left; */
-    padding: 1.15rem 1.2rem;
+    /* margin: 10px 0px 10px 14px; */
+    background: gainsboro;
+    /* color: white; */
+    /* font-family: system-ui, sans-serif; */
+    font-size: 0.8rem;
     width: 25%;
+    border: hidden;
 }
 
 .edit-icon {
-  width: 25px;
+  margin-right: 10px;
 }
 
 .job-descr-box {
   border: blue solid 2px;
   grid-column: 1;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 30% 70%;
+}
+
+.job-descr-header {
+  background-color: gainsboro;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 
 .job-descr-box h2 {
   margin: 10px 0px 10px 14px;
   text-transform: uppercase;
   font-size: 0.9rem;
+  grid-column: 1/2;
+  display: inline;
 }
 
 .job-descr-box h3 {
