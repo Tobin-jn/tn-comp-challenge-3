@@ -1,6 +1,5 @@
 /*==Parent Container=================================*/
 .parent-container {
-  border: black solid 2px;
   display: grid;
   grid-template-columns: 15% 85%;
 
@@ -10,9 +9,8 @@
 
 /*==Sidebar===========================================*/
 .sidebar {
-  border: red solid 2px;
   grid-column: 1;
-  background-color: gray;
+  background-color: #354051;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -44,7 +42,7 @@ h4 {
 
 aside p{
   color: #FFFFFF;
-   padding: 30px 19px 0px;
+  padding: 20px 20px 0px;
   font-size: 1rem;
 }
 
@@ -76,14 +74,14 @@ aside p{
 }
 .side-item {
   color: #FFFFFF;
-  background-color: gray;
+  background-color: #354051;
   display: block;
-  font-size: .7rem;
+  font-size: .8rem;
   align-self: flex-start;
 }
 .sidebar-icon {
-  height: 20px;
-  padding-right: .7rem;
+  height: 13px;
+  padding-right: 0.5rem;
 }
 
 .one,
@@ -93,14 +91,12 @@ aside p{
 
 /*==Content Main Box==================================*/
 .content-box {
-  border: green solid 2px;
   grid-column: 2;
   grid-template-columns: 70% 30%;
 }
 
 /*==Search Box========================================*/
 .search-box {
-  border: blue solid 2px;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 8% 62% 30%;
@@ -141,23 +137,19 @@ input::placeholder{
   align-self: center;
 }
 .plusone {
-  /*border: black solid 1px;*/
   padding: 16px;
 }
 
 .schedule {
-  /*border: black solid 1px;*/
     padding: 16px;
 }
 .menu-grid {
-  /*border: black solid 1px;*/
     padding: 16px;
 }
 
 /*==Title Box=========================================*/
 
 .title-box {
-  border: yellow solid 2px;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 60% 40%;
@@ -230,7 +222,6 @@ h1 {
 
 /*==Navigation Bar=====================================*/
 .nav-bar-box {
-  border: purple solid 2px;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -248,8 +239,8 @@ h1 {
 
 /*===Graphs============================================*/
 .graphs-box {
-  border: black solid 2px;
   grid-column: 1/2;
+  background-color: #EDF2F6;
 }
 
 .graphs {
@@ -259,84 +250,202 @@ h1 {
 
 /*===Description/Links Box=============================*/
 .descr-links-box {
-  border: green solid 2px;
 /*  grid-column: 1/2;*/
   display: grid;
   grid-auto-columns: 70% 30%;
+  background-color: #EDF2F6;
 }
 
 
 /*===Job Description===================================*/
 .job-descr-box {
-  border: blue solid 2px;
+  background-color: #FFFFFF;
   grid-column: 1;
   display: grid;
-  grid-gap: 2px;
   grid-template-columns: 30% 70%;
-  margin: 10px;
+  /*margin: 20px 10px 20px 20px;*/
+  align-items: start;
+  border: solid 1px red;
 }
 
-.job-descr-box p {
-  line-height: 1.7;
+
+/*====header=====*/
+
+.job-descr-header {
+  background-color: #6E7E95;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 30% 70%;
+    border: solid 1px red;
 }
+
+.job-descr-box h2 {
+/*  margin: 10px 0px 10px 14px;*/
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  grid-column: 1/2;
+  border: solid 1px red;
+}
+
 
 .edit-btn {
     text-transform: uppercase;
     color: #FFFFFF;
     /* margin: 10px 0px 10px 14px; */
-    background: gainsboro;
+      background-color: #6E7E95;
     /* color: white; */
     /* font-family: system-ui, sans-serif; */
     font-size: 0.8rem;
     width: 25%;
     border: hidden;
+      border: solid 1px red;
 }
 
 .edit-icon {
   margin-right: 10px;
+    border: solid 1px red;
 }
+
+
+/*=====rows=====*/
+
+.descr-row {
+  border-top: solid 1px #6E7E95;
+  grid-column: 1/3;
+}
+.job-descr-box h3 {
+/*  margin: 10px 0px 10px 14px;*/
+  text-transform: uppercase;
+  margin: 0px;
+  font-size: 0.8rem;
+    border: solid 1px red;
+    grid-column: 1/2;
+    border-top: solid 1px #6E7E95;
+}
+.job-descr-box p {
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px red;
+    grid-column: 2/3;
+        border-top: solid 1px #6E7E95;
+}
+
 
 .hiring-lead-pic {
   border-radius: 25px;
   height: 40px;
   margin-right: 10px;
   display: inline;
+    border: solid 1px red;
 }
 
 .hiring-lead-txt {
   display: inline;
+    border: solid 1px red;
 }
 
 
-.job-descr-header {
-  background-color: gainsboro;
-  grid-column: 1/3;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
 
-.job-descr-box h2 {
-  margin: 10px 0px 10px 14px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  grid-column: 1/2;
-  display: inline;
-}
 
-.job-descr-box h3 {
-  margin: 10px 0px 10px 14px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-.job-descr-box p {
-  margin: 10px 0px 10px 20px;
-}
+
+
+
+
+
+
+
+
+
+
 
 /*===Links=============================================*/
 .links-box {
-  border: yellow solid 2px;
+  background-color: #EDF2F6;
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 10px;
 }
+
+.facebook{
+  background-color: #3B5998
+}
+.twitter{
+  background-color: #00aced
+}
+.linkedin{
+  background-color: #0077B5
+}
+
+.copy-btn {
+  border: 0;
+  background: #1E88E5;
+  color: white;
+  /* font-family: system-ui, sans-serif; */
+  font-size: 0.7rem;
+  line-height: 1.9;
+  /* white-space: nowrap; */
+  /* text-decoration: none; */
+  text-align: center;
+  padding: 1.9px;
+  width: 25%;
+}
+.email-input {
+    color: white;
+    line-height: 1.9;
+    width: 95%;
+    margin-bottom: 25px;
+}
+.links-input {
+    color: white;
+    line-height: 1.9;
+    width: 69%;
+    margin-bottom: 25px;
+}
+
+.social-media-link {
+  color: #FFFFFF;
+  height: 50px;
+  position:relative;
+  margin-bottom: 10px;
+  /*text-align: center;*/
+}
+
+.social-icons{
+    /* right: 156px; */
+    height: 20px;
+    position: absolute;
+    left: 10px;
+}
+.link-widg-upload {
+  height: 13px;
+  margin-right: 7px;
+}
+
+.link-heading {
+  font-size: 1rem;
+  margin: 12px 0px 10px;
+}
+
+.links-box p {
+  margin: 5px 0px 12px;
+  font-size: 0.8rem;
+}
+
+.link-copy-box {
+  border-bottom: solid 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*===Media Queries======================================*/
