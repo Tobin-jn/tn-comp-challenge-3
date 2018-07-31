@@ -1,6 +1,8 @@
+body {
+  margin: 0px;
+}
 /*==Parent Container=================================*/
 .parent-container {
-  border: black solid 2px;
   display: grid;
   grid-template-columns: 15% 85%;
 
@@ -10,9 +12,8 @@
 
 /*==Sidebar===========================================*/
 .sidebar {
-  border: red solid 2px;
   grid-column: 1;
-  background-color: gray;
+  background-color: #354051;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -25,12 +26,19 @@
   margin-top: 15px;
 }
 
+hr  {
+  width: 100%;
+  border-color: #8590A1;
+  margin: 20px 0px;
+}
 .name-dropdown {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-    align-self: center;
+  align-self: center;
+  margin-bottom: 15px;
+  opacity: .6;
 }
 
 h4 {
@@ -42,19 +50,12 @@ h4 {
     margin-left: 7px;
 }
 
-aside p{
-  color: #FFFFFF;
-   padding: 30px 19px 0px;
-  font-size: 1rem;
-}
+.sidebar p {
 
-.categories {
-  position: relative;
-  padding-left: 10px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 90%;
+  color: #8590A1;
+  padding: 0px 20px 0px;
+  font-size: .9rem;
+  width: 75%;
 }
 
 .main-admin-items {
@@ -68,42 +69,54 @@ aside p{
   white-space: nowrap;
   text-decoration: none;
   text-align: left;
-  padding: 0.55rem 1.2rem;
+  padding: 0.65rem 1.2rem;
   width: 100%;
+  opacity: 0.6;
 }
-.checkbox {
-  margin: 10px;
-}
+
 .side-item {
   color: #FFFFFF;
-  background-color: gray;
+  background-color: #354051;
   display: block;
-  font-size: .7rem;
+  font-size: .8rem;
   align-self: flex-start;
 }
 .sidebar-icon {
-  height: 20px;
-  padding-right: .7rem;
+  height: 13px;
+  padding-right: 0.5rem;
 }
 
-.one,
-.two {
-  display: inline;
+.item-cat {
+    border: 0;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.65rem 1.2rem;
+    width: 65%;
+    opacity: 0.6;
+
 }
+
+.categories {
+  margin-left: 10px;
+}
+
 
 /*==Content Main Box==================================*/
 .content-box {
-  border: green solid 2px;
   grid-column: 2;
   grid-template-columns: 70% 30%;
 }
 
 /*==Search Box========================================*/
 .search-box {
-  border: blue solid 2px;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 8% 62% 30%;
+  border-bottom: solid 1px #89909C;
 }
 
 input::placeholder{
@@ -141,33 +154,29 @@ input::placeholder{
   align-self: center;
 }
 .plusone {
-  /*border: black solid 1px;*/
   padding: 16px;
 }
 
 .schedule {
-  /*border: black solid 1px;*/
     padding: 16px;
 }
 .menu-grid {
-  /*border: black solid 1px;*/
     padding: 16px;
 }
 
 /*==Title Box=========================================*/
 
 .title-box {
-  border: yellow solid 2px;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 15px 50px 35px;
+  grid-template-rows: 12px 56px 44px;
 }
 
 h1 {
     margin: 0px 0px 0px 20px;
     grid-row: 2;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     align-self: center;
 }
 
@@ -186,7 +195,7 @@ h1 {
     display: inline;
     margin-right: 10px;
     font-size: 0.9rem;
-    color: black;
+    color: #696969;
 }
 
 .title-btns-box {
@@ -230,7 +239,6 @@ h1 {
 
 /*==Navigation Bar=====================================*/
 .nav-bar-box {
-  border: purple solid 2px;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -241,54 +249,76 @@ h1 {
  .nav-bar-box p {
   font-size: 0.8rem;
   text-transform: uppercase;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #FFFFFF;
   padding-bottom: 10px;
+  font-weight: bold;
+  color: #696969;
  }
 
 
 /*===Graphs============================================*/
 .graphs-box {
-  border: black solid 2px;
   grid-column: 1/2;
+  background-color: #EDF2F6;
+
 }
 
 .graphs {
   width: 100%;
+  border-top: solid 1px #89909C;
+  border-bottom: solid 1px #89909C;
 }
 
 
 /*===Description/Links Box=============================*/
 .descr-links-box {
-  border: green solid 2px;
 /*  grid-column: 1/2;*/
   display: grid;
   grid-auto-columns: 70% 30%;
+  background-color: #EDF2F6;
 }
 
 
 /*===Job Description===================================*/
 .job-descr-box {
-  border: blue solid 2px;
+  background-color: #FFFFFF;
   grid-column: 1;
   display: grid;
-  grid-gap: 2px;
   grid-template-columns: 30% 70%;
-  margin: 10px;
+  margin: 20px 10px 20px 20px;
+  align-items: start;
 }
 
-.job-descr-box p {
-  line-height: 1.7;
+
+
+/*====header=====*/
+
+.job-descr-header {
+  background-color: #6E7E95;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
+
+.job-descr-box h2 {
+/*  margin: 10px 0px 10px 14px;*/
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  grid-column: 1/2;
+  padding: 0px 0px 0px 20px;
+}
+
 
 .edit-btn {
     text-transform: uppercase;
     color: #FFFFFF;
     /* margin: 10px 0px 10px 14px; */
-    background: gainsboro;
+      background-color: #6E7E95;
     /* color: white; */
     /* font-family: system-ui, sans-serif; */
     font-size: 0.8rem;
-    width: 25%;
+    width: 18%;
     border: hidden;
 }
 
@@ -296,47 +326,161 @@ h1 {
   margin-right: 10px;
 }
 
-.hiring-lead-pic {
-  border-radius: 25px;
-  height: 40px;
-  margin-right: 10px;
-  display: inline;
+
+/*=====rows=====*/
+
+#position{
+  border-top: hidden;
 }
 
-.hiring-lead-txt {
-  display: inline;
+#customer {
+  border-top: hidden;
 }
 
-
-.job-descr-header {
-  background-color: gainsboro;
+.descr-row {
+  border-top: solid 1px #6E7E95;
   grid-column: 1/3;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.job-descr-box h2 {
-  margin: 10px 0px 10px 14px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  grid-column: 1/2;
-  display: inline;
 }
 
 .job-descr-box h3 {
-  margin: 10px 0px 10px 14px;
+  color: #6E7E95;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  margin: 0px 0px 15px 20px;
+  font-size: 0.9rem;
+  grid-column: 1/2;
+  border-top: solid 1px #6E7E95;
+  padding: 20px 0px 0px 0px;
 }
+
 .job-descr-box p {
-  margin: 10px 0px 10px 20px;
+  color: #6E7E95;
+  margin: 0px;
+  padding: 0px;
+  grid-column: 2/3;
+  border-top: solid 1px #6E7E95;
+  padding: 20px 20px 0px 8px;
+  font-size: 0.9rem;
+  margin: 0px 20px 15px 0px;
 }
+
+.hiring-lead-pic {
+  border-radius: 25px;
+  height: 40px;
+  margin: -10px 10px 0px 0px;
+  display: inline;
+}
+
+#hiring-lead-txt {
+      display: inline;
+    border-top: solid 1px #6E7E95;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*===Links=============================================*/
 .links-box {
-  border: yellow solid 2px;
+  background-color: #EDF2F6;
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 10px;
 }
+
+.facebook{
+  background-color: #3B5998
+}
+.twitter{
+  background-color: #00aced
+}
+.linkedin{
+  background-color: #0077B5
+}
+
+.copy-btn {
+  border: 0;
+  background: #1E88E5;
+  color: white;
+  /* font-family: system-ui, sans-serif; */
+  font-size: 0.7rem;
+  line-height: 1.9;
+  /* white-space: nowrap; */
+  /* text-decoration: none; */
+  text-align: center;
+  padding: 1.9px;
+  width: 25%;
+}
+.email-input {
+    color: white;
+    line-height: 1.9;
+    width: 95%;
+    margin-bottom: 25px;
+}
+.links-input {
+    color: white;
+    line-height: 1.9;
+    width: 69%;
+    margin-bottom: 25px;
+}
+
+.social-media-link {
+  color: #FFFFFF;
+  height: 50px;
+  position:relative;
+  margin-bottom: 10px;
+  /*text-align: center;*/
+}
+
+.social-icons{
+    /* right: 156px; */
+    height: 20px;
+    position: absolute;
+    left: 10px;
+}
+.link-widg-upload {
+  height: 13px;
+  margin-right: 7px;
+}
+
+.link-heading {
+  color: #696969;
+  font-size: 1rem;
+  margin: 12px 0px 10px;
+}
+
+.links-box p {
+  color: #696969;
+  margin: 5px 0px 12px;
+  font-size: 0.8rem;
+}
+
+.link-copy-box {
+  border-bottom: solid 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*===Media Queries======================================*/
