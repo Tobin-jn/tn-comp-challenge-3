@@ -484,7 +484,73 @@ h1 {
 
 
 /*===Media Queries======================================*/
-@media(max-width: 640px){
+@media (max-width: 800px){
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sidebar {
+  background-color: #354051;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  height: 120px;
+
+}
+
+
+
+.profile-pic {
+  height: 84px;
+  margin: 10px;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+.name-dropdown {
+  margin-bottom: 0px;
+  opacity: .6;
+  align-self: flex-end;
+}
+
+.sidebar p {
+  color: #8590A1;
+  /* padding: 0px 20px 0px; */
+  font-size: 1.3rem;
+  width: 10%;
+  margin-left: 5%;
+  align-self: flex-end;
+}
+
+.side-item {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 }
