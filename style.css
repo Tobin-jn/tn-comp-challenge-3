@@ -250,7 +250,7 @@ h1 {
 .nav-bar-box {
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 40px;
   align-items: start;
   justify-items: center;
@@ -510,7 +510,7 @@ h1 {
 
 
 /*===Media Queries======================================*/
-@media (max-width: 800px){
+@media (max-width: 840px){
 
 .parent-container {
   display: flex;
@@ -595,22 +595,20 @@ h1 {
 }
 
 .title-btns-box {
-/*    width: 277px;
-    height: 50px;*/
-    margin-left: 22px;
-    grid-row: 3;
-    align-self: start;
-    justify-self: start;
+  margin-left: 22px;
+  grid-row: 3;
+  align-self: start;
+  justify-self: start;
 }
 
 .location-post {
-    grid-row: 2;
+  grid-row: 2;
 }
 
 /*========Nav========*/
 .nav-bar-box {
-    grid-template-columns: repeat(7, 1fr);
-  }
+  grid-template-columns: repeat(7, 1fr);
+}
 
 .nav-bar-box p {
   font-size: 0.7rem;
@@ -619,15 +617,13 @@ h1 {
 /*=======Description Box==========*/
 
 .descr-links-box {
-    /* grid-column: 1/2; */
-    display: flex;
-    flex-direction: column;
-    /* grid-auto-columns: 70% 30%; */
-    background-color: #EDF2F6;
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF2F6;
 }
 
 .job-descr-box h2 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
   }
 
 .job-descr-header {
@@ -663,8 +659,8 @@ p {
 
 
 .social-media-link {
-    font-size: 1rem;
-    width: 100%;
+  font-size: 1rem;
+  width: 100%;
 }
 
 .link-body {
