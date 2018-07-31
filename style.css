@@ -1,14 +1,12 @@
 body {
   margin: 0px;
 }
+
 /*==Parent Container=================================*/
 .parent-container {
   display: grid;
   grid-template-columns: 15% 85%;
-
 }
-
-
 
 /*==Sidebar===========================================*/
 .sidebar {
@@ -318,7 +316,7 @@ h1 {
     /* color: white; */
     /* font-family: system-ui, sans-serif; */
     font-size: 0.8rem;
-    width: 18%;
+    width: 30%;
     border: hidden;
 }
 
@@ -505,12 +503,17 @@ h1 {
 
 .profile-pic {
   height: 84px;
-  margin: 10px;
+  margin: 22px;
+}
+
+.dropdown-icon {
+    margin-top: 19px;
 }
 
 h4 {
   color: #FFFFFF;
   font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 .name-dropdown {
@@ -524,7 +527,7 @@ h4 {
   /* padding: 0px 20px 0px; */
   font-size: 1.3rem;
   width: 10%;
-  margin-left: 5%;
+/*  margin-left: 5%;*/
   align-self: flex-end;
 }
 
@@ -536,6 +539,121 @@ hr {
   display: none;
 }
 
+/*=======search========*/
+
+.search-input {
+  margin-left: 5px;
+  width: 75%;
+}
+
+.search-menu {
+  display: none; 
+}
+
+
+.search-box {
+  grid-template-columns: 2% 58% 40%;
+}
+
+/*========Header========*/
+
+.title-box {
+  grid-template-columns: 100%;
+  grid-template-rows: 56px 44px;
+}
+
+h1 {
+    grid-row: 1;
+    font-size: 1.9rem;
+}
+
+.title-btns-box {
+/*    width: 277px;
+    height: 50px;*/
+    margin-left: 22px;
+    grid-row: 3;
+    align-self: start;
+    justify-self: start;
+}
+
+.location-post {
+    grid-row: 2;
+}
+
+/*========Nav========*/
+.nav-bar-box {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+.nav-bar-box p {
+  font-size: 0.7rem;
+}
+
+/*=======Description Box==========*/
+
+.job-descr-box h2 {
+    font-size: 1.3rem;
+  }
+
+.job-descr-header {
+  grid-template-columns: 45% 55%;
+}
+
+
+.edit-btn {
+  font-size: 1.3rem;
+    width: 30%;
+}
+
+.job-descr-box {
+  grid-template-columns: 40% 60%;
+}
+
+.job-descr-box 
+h3 {
+  font-size: 1.1rem;
+}
+
+.job-descr-box 
+p {
+  font-size: 1.3rem;
+}
+
+/*========Links=========*/
+
+.social-media-link {
+    font-size: 0.7rem;
+}
+
+.link-heading {
+  font-size: 1.3rem;
+}
+
+.links-box p {
+  font-size: 1.1rem;
+}
+
+.copy-btn {
+  font-size: 0.9rem;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.links-input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+}
+
+/*===Media Queries======================================*/
+@media (max-width: 620px){
+
+  /*move Links box down*/
+
+/*  .descr-links-box {
+    grid-template-columns: 100%;
+  }*/
 
 
 
@@ -552,7 +670,11 @@ hr {
 
 
 
-  
+
+
+
+
+
 }
 
 
