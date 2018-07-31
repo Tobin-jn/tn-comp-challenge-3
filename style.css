@@ -279,6 +279,13 @@ h1 {
   border-bottom: solid 1px #89909C;
 }
 
+.circle-graph {
+  display: none;
+}
+.bar-graph {
+  display: none;
+}
+
 
 /*===Description/Links Box=============================*/
 .descr-links-box {
@@ -508,7 +515,6 @@ h1 {
 .parent-container {
   display: flex;
   flex-direction: column;
-
 }
 
 .sidebar {
@@ -517,10 +523,7 @@ h1 {
   flex-direction: row;
   align-items: start;
   height: 120px;
-
 }
-
-
 
 .profile-pic {
   height: 84px;
@@ -570,6 +573,7 @@ hr {
 .search-menu {
   display: none; 
 }
+
 .div-search-btns {
   margin: 0px;
 }
@@ -699,13 +703,47 @@ p {
 /*===Media Queries======================================*/
 @media (max-width: 500px){
 
-  /*move Links box down*/
 
-/*  .descr-links-box {
-    grid-template-columns: 100%;
-  }*/
+.parent-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.sidebar {
+  display: none;
+}
 
+.search-menu {
+  display: initial; 
+}
+
+.mobile-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-auto-flow: dense;
+}
+
+.nav-bar-box {
+  display: initial;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-box {
+  grid-column: 2;
+}
+
+.graphs {
+  display: none;
+}
+
+.circle-graph {
+  display: none;
+}
+.bar-graph {
+  display: none;
+}
 
 
 
