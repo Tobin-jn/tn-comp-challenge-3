@@ -63,3 +63,5 @@ Proficient  Can apply fundamental design concepts in a comp that demonstrates a 
 Exceptional Typography, color choices, and layout decisions are thoughtful and appropriate, and strongly enhance the layout and legibility of the design.
 
 ![static-comp-challenge-3](https://user-images.githubusercontent.com/32209705/43260339-703698e6-9096-11e8-985c-00e036f9d1f8.jpg)
+
+![staticcomp3](https://user-images.githubusercontent.com/32209705/43508047-0821ec0c-952c-11e8-91b7-615ca3820e86.jpg)
