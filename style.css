@@ -125,6 +125,16 @@ h4 {
   border-bottom: solid 1px #89909C;
 }
 
+.search-input {
+  grid-column: 2;
+  height: 50px;
+  font-size: 1rem;
+  text-indent: 30px;
+  border: hidden;
+  margin: 5px 0px 0px 15px;
+  width: 60%;
+}
+
 .search-input::placeholder {
   background-image: url(images/search-gray.png);
   background-repeat: no-repeat;
@@ -136,15 +146,6 @@ h4 {
 .search-menu {
   cursor: pointer;
   grid-column: 1;
-}
-
-.search-input {
-  grid-column: 2;
-  height: 50px;
-  font-size: 1rem;
-  text-indent: 30px;
-  border: hidden;
-  margin: 5px 0px 0px 15px;
 }
 
 .div-search-btns {
@@ -615,7 +616,10 @@ h1 {
     margin: 0px;
   }
   .search-box {
-    grid-template-columns: 2% 58% 40%;
+    grid-template-columns: 36% 40%;;
+  }
+  .search-icon {
+    height: 18px;
   }
   /*========Header========*/
   .title-box {
