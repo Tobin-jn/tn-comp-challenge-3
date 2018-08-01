@@ -160,14 +160,14 @@ h4 {
   border-right: solid 1px #89909C;
 }
 .plusone {
-  padding: 16px;
+  margin: 0px;
 }
 
 .schedule {
-    padding: 16px;
+  margin: 0px;
 }
 .menu-grid {
-    padding: 16px;
+  margin: 0px;
 }
 
 /*==Title Box=========================================*/
@@ -772,6 +772,7 @@ h1 {
   border-top: solid 1px #89909C;
   border-bottom: solid 1px #89909C;
   margin: 0 auto;
+  width: 100%;
 }
 .graph-divider {
   display: block;
@@ -783,6 +784,7 @@ h1 {
   margin: 0px;
   border-bottom: solid 1px #89909C;
   margin: 0 auto;
+  width: 100%;
 }
 
 .job-descr-box {
@@ -800,6 +802,9 @@ h1 {
 .job-descr-box p {
     font-size: 0.9rem;
 }
+
+.edit-btn {
+    font-size: 1.1rem;
 
 .btn-text {
   display: none;
@@ -875,7 +880,18 @@ h1 {
 }
 .search-input {
     grid-column: 1;
-    height: 44px;
+    height: 30px;
+}
+
+.search-icon {
+  padding: 11px;
+}
+
+.search-input::placeholder{
+    text-indent: 30px;
+    height: 40px;
+    font-size: .8rem;
+    padding: 5px;
 }
 
 .div-search-btns {
@@ -962,14 +978,32 @@ h1 {
   border-top: solid 1px #89909C;
   border-bottom: solid 1px #89909C;
   margin: 0px;
+  width: 100%;
 }
 .bar-graph {
   background-color: #EDF2F6;
   display: inline-block;
   margin: 0px;
   border-bottom: solid 1px #89909C;
+  width: 100%;
 }
 
+.edit-btn {
+  font-size: 1rem;
+}
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-input {
+  width: 97%
+}
+
+.social-icons {
+    left: 46%;
+}
 
 
 
