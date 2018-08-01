@@ -3,7 +3,7 @@
   <head>
     <title>Static Comp 3</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -15,7 +15,7 @@
         
         
           <img src="images/profile1.jpg" class="profile-pic" alt="Profile Picture">
-        <div class="name-dropdown">
+        <div class="name-dropdown" aria-label="Name Selector dropdown">
           <h4>Ali Barley</h4>
           <img src="images/down.png" alt="DropDown" class="dropdown-icon">
         </div>
@@ -76,27 +76,27 @@
         <section class="search-box">
 
           <img class="search-menu search-icon" src="images/menu-gray.png" alt="Menu Icon">
-
-          <input class="search-input" type="text" name="search" placeholder="Search for a job">
-
-          <div class="div-search-btns">
+          <form>
+            <input class="search-input" type="text" name="search" placeholder="Search for a job">
+          </form>
+          <div class="div-search-btns" aria-label="Buttons for search functionality">
             <img class="search-icon plusone" src="images/plusone-gray.png" alt="Plus One Icon">
             <img class="search-icon schedule" src="images/schedule-gray.png" alt="Schedule Icon">
             <img class="search-icon menu-grid" src="images/menugrid-gray.png" alt="Menu Grid Icon">
           </div>
         </section>
 
-        <div class="mobile-container">
+        <div class="mobile-container" aria-label="Container for mobile styling">
         <!-- Title -->
         <section class="title-box">
           <h1>Customer Service Representative</h1>
 
-          <div class="location-post">
+          <div class="location-post" aria-label="Job Location">
             <img class="location-post-icon" src="images/location-gray.png">
             <h5 class="location-post-text">Denver, CO &#8226</h5>
             <p class="location-post-text"><a href="">Preview this Post</a></p>
           </div>
-          <div class="title-btns-box">
+          <div class="title-btns-box" aria-label="Buttons box for bookmark, edit, and trash">
             <button class="open-btn"><img src="images/open-gray.png" class="btn-icon circle-icon"><span class="open-txt">OPEN</span></button>
             <button class="circle-btn bookmark"><img src="images/bookmark-gray.png" class="btn-icon"></button>
             <button class="circle-btn edit"><img src="images/edit-gray.png" class="btn-icon"></button>
@@ -135,7 +135,7 @@
 
               <!-- Job Description -->
           <section class="job-descr-box">
-            <div class="job-descr-header">
+            <div class="job-descr-header" aria-label="Header for Job Description">
               <h2>Job Description</h2>
               <button class="edit-btn" alt="Edit"><img class="edit-icon" src="images/edit.png">Edit</button> 
             </div>
@@ -160,10 +160,8 @@
               <!-- <div class="hiring-lead"> -->
                 
                 <p id="hiring-lead-txt"><img class="hiring-lead-pic" src="images/profile2.jpg" alt="Manager Picture">Tom Tizzy</p>
-              <!-- </div> -->
               <h3>Approved Salary</h3>
               <p>$100,000</p>
-            <!-- </div> -->
           </section>
 
 
@@ -187,8 +185,9 @@
             </form>
             <h3 class="link-heading"><img class="link-widg-upload" src="images/upload-gray.png" alt="Upload Icon">Upload Resumes by Email</h3>
             <p class="link-body">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. </p>
-            <input class="email-input input-style" type="email" name="Email Input" placeholder='tomtizzy@gmail.com'>
-
+            <form>
+              <input class="email-input input-style" type="email" name="Email Input" placeholder='tomtizzy@gmail.com'>
+            </form>
             
           </section>
         </section>
