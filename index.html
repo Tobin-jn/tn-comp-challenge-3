@@ -2,193 +2,180 @@
 <html>
   <head>
     <title>Static Comp 3</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
+    rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
   </head>
   <body>
-<!-- Parent Container -->    
-    <div class="parent-container" aria-label="Formating Parent Container">
-
-      <!-- SIDEBAR -->
+<!-- Parent Container -->
+    <div aria-label="Formating Parent Container" class="parent-container">
+<!-- Sidebar -->
       <aside class="sidebar">
-        
-        
-          <img src="images/profile1.jpg" class="profile-pic" alt="Profile Picture">
-        <div class="name-dropdown" aria-label="Name Selector dropdown">
-          <h4>Ali Barley</h4>
-          <img src="images/down.png" alt="DropDown" class="dropdown-icon">
-        </div>
-
-          <hr>
-       
-          <p>Main</p>
-
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/home.png">Home</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/jobs.png">Jobs</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/resumes.png">Resumes</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/tasks.png">Tasks</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/calendar.png">Calendar</button>
-
-          <hr>
-          <p>Admin</p>
-         
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/users.png">Users</button>
-           <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/location.png">Locations</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/workflows.png">Workflows</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon" src="images/jobboard.png">Job Boards</button>
-            <button class="side-item main-admin-items"><img class="sidebar-icon"  src="images/social.png">Social</button>
-           
-          <hr> 
-          <p class="side-headings">Categories</p>       
-         
-
-            <label class="side-item item-cat">
-              <input type="checkbox"><span class="categories">Administrative</span>
-            </label>
-
-            <label class="side-item item-cat"">
-              <input type="checkbox"><span class="categories">Design</span>
-            </label>
-
-            <label class="side-item item-cat"">
-              <input type="checkbox"><span class="categories">Executive</span>
-            </label>
-
-            <label class="side-item item-cat"">
-              <input type="checkbox"><span class="categories">Human Resources</span>
-            </label>
-
-
-         
+        <img alt="Profile Picture" class="profile-pic" src="images/profile1.jpg">
+        <div aria-label="Name Selector dropdown" class="name-dropdown">
+        <h4>Ali Barley</h4><img alt="DropDown" class="dropdown-icon" src=
+        "images/down.png"></div>
+        <hr>
+        <p>Main</p><button class="side-item main-admin-items"><img class=
+        "sidebar-icon" src="images/home.png">Home</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/jobs.png">Jobs</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/resumes.png">Resumes</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/tasks.png">Tasks</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/calendar.png">Calendar</button>
+        <hr>
+        <p>Admin</p><button class="side-item main-admin-items"><img class=
+        "sidebar-icon" src="images/users.png">Users</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/location.png">Locations</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/workflows.png">Workflows</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/jobboard.png">Job Boards</button> <button class=
+        "side-item main-admin-items"><img class="sidebar-icon" src=
+        "images/social.png">Social</button>
+        <hr>
+        <p class="side-headings">Categories</p><label class=
+        "side-item item-cat"><input type="checkbox"><span class=
+        "categories">Administrative</span></label> <label class=
+        "side-item item-cat"><input type="checkbox"><span class=
+        "categories">Design</span></label> <label class=
+        "side-item item-cat"><input type="checkbox"><span class=
+        "categories">Executive</span></label> <label class=
+        "side-item item-cat"><input type="checkbox"><span class=
+        "categories">Human Resources</span></label>
       </aside>
-
-
-
-
-
-      <!-- Content-Main Box -->
       <article class="content-box">
-
-
-
-        <!-- Search -->
+<!-- SearchBar -->
         <section class="search-box">
-
-          <img class="search-menu search-icon" src="images/menu-gray.png" alt="Menu Icon">
+          <img alt="Menu Icon" class="search-menu search-icon" src=
+          "images/menu-gray.png">
           <form>
-            <input class="search-input" type="text" name="search" placeholder="Search for a job">
+            <input class="search-input" name="search" placeholder=
+            "Search for a job" type="text">
           </form>
-          <div class="div-search-btns" aria-label="Buttons for search functionality">
-            <img class="search-icon plusone" src="images/plusone-gray.png" alt="Plus One Icon">
-            <img class="search-icon schedule" src="images/schedule-gray.png" alt="Schedule Icon">
-            <img class="search-icon menu-grid" src="images/menugrid-gray.png" alt="Menu Grid Icon">
-          </div>
+          <div aria-label="Buttons for search functionality" class=
+          "div-search-btns"><img alt="Plus One Icon" class="search-icon plusone"
+          src="images/plusone-gray.png"> <img alt="Schedule Icon" class=
+          "search-icon schedule" src="images/schedule-gray.png"> <img alt="Schedule Icon"
+          "Menu Grid Icon" class="search-icon menu-grid" src=
+          "images/menugrid-gray.png"></div>
         </section>
-
-        <div class="mobile-container" aria-label="Container for mobile styling">
-        <!-- Title -->
-        <section class="title-box">
-          <h1>Customer Service Representative</h1>
-
-          <div class="location-post" aria-label="Job Location">
-            <img class="location-post-icon" src="images/location-gray.png">
-            <h5 class="location-post-text">Denver, CO &#8226</h5>
-            <p class="location-post-text"><a href="">Preview this Post</a></p>
-          </div>
-          <div class="title-btns-box" aria-label="Buttons box for bookmark, edit, and trash">
-            <button class="open-btn"><img src="images/open-gray.png" class="btn-icon circle-icon"><span class="open-txt">OPEN</span></button>
-            <button class="circle-btn bookmark"><img src="images/bookmark-gray.png" class="btn-icon"></button>
-            <button class="circle-btn edit"><img src="images/edit-gray.png" class="btn-icon"></button>
-            <button class="circle-btn trash"><img src="images/trash-gray.png" class="btn-icon"></button>
-          </div>
-        </section>
-
-
-        <!-- Navigation bar -->
-        <section class="nav-bar-box">
-          
-          <p class="menu-option summary">Summary</p>
-          <p class="menu-option applicants">Applicants</p>
-          <p class="menu-option job-board">Job Board</p>
-          <p class="menu-option interviews">Interviews</p>
-          <p class="menu-option activity">Activity</p>
-          <p class="menu-option broadcast">Broadcast</p>
-          <p class="menu-option notifications">Notifications</p>
-          
-        </section>
-
-      </div>
-
-        <!-- Graphs -->
-        <section class="graphs-box">
-          <img src="images/graphs.jpeg" class="graphs" alt="Circle and Bar Graphs">
-          <hr class="graphs-hr">
-          <img src="images/circle-graph.jpeg" class="circle-graph" alt="Circle Graphs">
-          <img src="images/bar-graph.jpeg" class="bar-graph" alt="Bar Graphs">
-
-        </section>
-
-<!-- ==Description/Links Box=== -->
-        <section class="descr-links-box">
-    
-
-              <!-- Job Description -->
-          <section class="job-descr-box">
-            <div class="job-descr-header" aria-label="Header for Job Description">
-              <h2>Job Description</h2>
-              <button class="edit-btn" alt="Edit"><img class="edit-icon" src="images/edit.png">Edit</button> 
+        <div aria-label="Container for mobile styling" class="mobile-container">
+<!-- Page Title -->
+          <section class="title-box">
+            <h1>Customer Service Representative</h1>
+            <div aria-label="Job Location" class="location-post">
+              <img class="location-post-icon" src="images/location-gray.png">
+              <h5 class="location-post-text">Denver, CO &#8226</h5>
+              <p class="location-post-text"><a href="">Preview this Post</a></p>
             </div>
-            <!-- <div class="job-descr-contents"> -->
-            <!-- <div class="descr-row"> -->
-              <h3 id="position">Position Title</h3>
-              <p id="customer">Customer Service Representative</p>
-            <!-- </div> -->
-            <!-- <div class="descr-row"> -->
-              <h3>Location</h3>
-              <p>San Francisco, CA</p>
-            <!-- </div> -->
-              <h3>Employment Type</h3>
-              <p>Full-Time</p>
-              <h3>Experience</h3>
-              <p>Mid-Level</p>
-              <h3>Status</h3>
-              <p>Open</p>
-              <h3>Description</h3>
-              <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-              <h3>Hiring Lead</h3>
-              <!-- <div class="hiring-lead"> -->
-                
-                <p id="hiring-lead-txt"><img class="hiring-lead-pic" src="images/profile2.jpg" alt="Manager Picture">Tom Tizzy</p>
-              <h3>Approved Salary</h3>
-              <p>$100,000</p>
+            <div aria-label="Buttons box for bookmark, edit, and trash" class=
+            "title-btns-box">
+              <button class="open-btn"><img class="btn-icon circle-icon" src=
+              "images/open-gray.png"><span class="open-txt">OPEN</span></button>
+              <button class="circle-btn bookmark"><img class="btn-icon" src=
+              "images/bookmark-gray.png"></button> <button class=
+              "circle-btn edit"><img class="btn-icon" src=
+              "images/edit-gray.png"></button> <button class=
+              "circle-btn trash"><img class="btn-icon" src=
+              "images/trash-gray.png"></button>
+            </div>
+          </section>
+<!-- Navigation bar -->
+          <section class="nav-bar-box">
+            <p class="menu-option summary">Summary</p>
+            <p class="menu-option applicants">Applicants</p>
+            <p class="menu-option job-board">Job Board</p>
+            <p class="menu-option interviews">Interviews</p>
+            <p class="menu-option activity">Activity</p>
+            <p class="menu-option broadcast">Broadcast</p>
+            <p class="menu-option notifications">Notifications</p>
+          </section>
+        </div>
+<!-- Graphs -->
+        <section class="graphs-box">
+          <img alt="Circle and Bar Graphs" class="graphs" src=
+          "images/graphs.jpeg">
+          <hr class="graphs-hr">
+          <img alt="Circle Graphs" class="circle-graph" src=
+          "images/circle-graph.jpeg"> <img alt="Bar Graphs" class="bar-graph"
+          src="images/bar-graph.jpeg">
+        </section>
+        <section class="descr-links-box">
+<!-- Job Description -->
+          <section class="job-descr-box">
+            <div aria-label="Header for Job Description" class=
+            "job-descr-header">
+              <h2>Job Description</h2><button class="edit-btn"><img class=
+              "edit-icon" src="images/edit.png">Edit</button>
+            </div>
+            <h3 id="position">Position Title</h3>
+            <p id="customer">Customer Service Representative</p>
+            <h3>Location</h3>
+            <p>San Francisco, CA</p>
+            <h3>Employment Type</h3>
+            <p>Full-Time</p>
+            <h3>Experience</h3>
+            <p>Mid-Level</p>
+            <h3>Status</h3>
+            <p>Open</p>
+            <h3>Description</h3>
+            <p>Leverage agile frameworks to provide a robust synopsis for high
+            level overviews. Iterative approaches to corporate strategy foster
+            collaborative thinking to further the overall value proposition.
+            Organically grow the holistic world view of disruptive innovation via
+            workplace diversity and empowerment.</p>
+            <h3>Hiring Lead</h3>
+            <p id="hiring-lead-txt"><img alt="Manager Picture" class=
+            "hiring-lead-pic" src="images/profile2.jpg">Tom Tizzy</p>
+            <h3>Approved Salary</h3>
+            <p>$100,000</p>
           </section>
 
-
-
-    <!-- Links -->
+<!-- Links -->
           <section class="links-box">
-            <button class="social-media-link facebook"><img class="social-icons" src="images/facebook.png"><span class="btn-text">Post to Facebook</span></button>
-            <button class="social-media-link twitter"><img class="social-icons" src="images/twitter.png"><span class="btn-text">Tweet this Job</span></button>
-            <button class="social-media-link linkedin"><img class="social-icons" src="images/linkedin.png"><span class="btn-text">Post to Linkedin</span></button>
-            <h3 class="link-heading"><img class="link-widg-upload" src="images/link-gray.png" alt="Link Icon">Link to this Job</h3>
-            <p class="link-body">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. </p>
+            <button class="social-media-link facebook"><img class="social-icons"
+            src="images/facebook.png"><span class="btn-text">Post to
+            Facebook</span></button> <button class=
+            "social-media-link twitter"><img class="social-icons" src=
+            "images/twitter.png"><span class="btn-text">Tweet this
+            Job</span></button> <button class=
+            "social-media-link linkedin"><img class="social-icons" src=
+            "images/linkedin.png"><span class="btn-text">Post to
+            Linkedin</span></button>
+            <h3 class="link-heading"><img alt="Link Icon" class=
+            "link-widg-upload" src="images/link-gray.png">Link to this Job</h3>
+            <p class="link-body">Capitalize on low hanging fruit to identify a
+            ballpark value added activity to beta test.</p>
             <form class="link-copy-box">
-              <input class="links-input input-style" type="url" name="Link Input" placeholder='https://www.jobs.com/...'>
+              <input class="links-input input-style" name="Link Input"
+              placeholder='https://www.jobs.com/...' type="url"> <button class=
+              "copy-btn">Copy</button>
+            </form>
+            <h3 class="link-heading"><img alt="Button Icon" class=
+            "link-widg-upload" src="images/chess-gray.png">Use the Button
+            Widget</h3>
+            <p class="link-body">Capitalize on low hanging fruit to identify a
+            ballpark value added activity to beta test.</p>
+            <form class="link-copy-box">
+              <input class="links-input input-style" name="Widget Input"
+              placeholder="&lt;script type=text/javascript..." type="text">
               <button class="copy-btn">Copy</button>
             </form>
-            <h3 class="link-heading"><img class="link-widg-upload" src="images/chess-gray.png" alt="Button Icon">Use the Button Widget</h3>
-            <p class="link-body">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. </p>
-            <form class="link-copy-box">
-              <input class="links-input input-style" type="text" name="Widget Input" placeholder="<script type=text/javascript...">
-              <button class="copy-btn">Copy</button>
-            </form>
-            <h3 class="link-heading"><img class="link-widg-upload" src="images/upload-gray.png" alt="Upload Icon">Upload Resumes by Email</h3>
-            <p class="link-body">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. </p>
+            <h3 class="link-heading"><img alt="Upload Icon" class=
+            "link-widg-upload" src="images/upload-gray.png">Upload Resumes by
+            Email</h3>
+            <p class="link-body">Capitalize on low hanging fruit to identify a
+            ballpark value added activity to beta test.</p>
             <form>
-              <input class="email-input input-style" type="email" name="Email Input" placeholder='tomtizzy@gmail.com'>
+              <input class="email-input input-style" name="Email Input"
+              placeholder='tomtizzy@gmail.com' type="email">
             </form>
-            
           </section>
         </section>
       </article>
