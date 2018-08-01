@@ -282,6 +282,7 @@ h1 {
 .circle-graph {
   display: none;
 }
+
 .bar-graph {
   display: none;
 }
@@ -771,9 +772,13 @@ h1 {
   background-color: #FFFFFF;
   display: block;
   border-top: solid 1px #89909C;
-    border-bottom: solid 1px #89909C;
+  border-bottom: solid 1px #89909C;
   margin: 0 auto;
 }
+.graph-divider {
+  display: block;
+}
+
 .bar-graph {
   background-color: #FFFFFF;
   display: block;
@@ -781,6 +786,56 @@ h1 {
   border-bottom: solid 1px #89909C;
   margin: 0 auto;
 }
+
+.job-descr-box h2 {
+    font-size: 1rem;
+}
+
+.job-descr-box h3 {
+    font-size: 0.9rem;
+}
+
+.job-descr-box p {
+    font-size: 0.9rem;
+}
+
+.btn-text {
+  display: none;
+}
+
+.social-icons {
+    height: 31px;
+    top: 9px;
+    position: block;
+    left: 40%;
+}
+
+.link-widg-upload {
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  .link-heading {
+    grid-row: 2;
+    font-size: 1.2rem;
+    margin: 5px 0px 5px;
+    padding: 6px;
+  }
+
+  .links-input {
+    line-height: 3;
+  }
+
+ .input-style::placeholder{
+    text-indent: 5px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
 
 
 }
@@ -848,7 +903,7 @@ h1 {
   background-color: #EDF2F6;
   display: inline-block;
   border-top: solid 1px #89909C;
-    border-bottom: solid 1px #89909C;
+  border-bottom: solid 1px #89909C;
   margin: 0px;
 }
 .bar-graph {
