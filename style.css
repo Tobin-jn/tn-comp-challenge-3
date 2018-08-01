@@ -276,7 +276,6 @@ h1 {
 .graphs {
   width: 100%;
   border-top: solid 1px #89909C;
-  border-bottom: solid 1px #89909C;
 }
 
 .circle-graph {
@@ -285,6 +284,12 @@ h1 {
 
 .bar-graph {
   display: none;
+}
+
+.graphs-hr {
+  width: 96%;
+  border-color: #89909C;
+  margin: 0px auto;
 }
 
 
@@ -915,7 +920,6 @@ h1 {
 .title-btns-box {
   margin: 15px 0px 0px 5px;
   width: 215px;
-  border: solid 1px black;
 }
 
 .circle-btn {
