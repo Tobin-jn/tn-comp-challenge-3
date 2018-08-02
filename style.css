@@ -823,6 +823,9 @@ a {
     font-size: 0.6rem;
   }
   
+  .circles-flex-wrapper {
+    margin-top: 30px;
+  }
   
   .job-descr-box {
     margin: 20px 20px 20px 20px;
@@ -877,7 +880,7 @@ a {
 
 /*===Media Query======================================*/
 
-@media (max-width: 510px) {
+@media (max-width: 430px) {
   
   .parent-container {
     display: flex;
@@ -885,71 +888,88 @@ a {
     margin: 0px;
   }
 
-  
-/*  h1 {
-    padding: 25px 0px 10px 5px;
-  }
-  
-  .location-post {
-    margin: 5px 0px;
-  }
-  
-  .title-btns-box {
-    margin: 15px 0px 0px 5px;
-    width: 215px;
-  }
-  
-  .circle-btn {
-    border-radius: 55px;
-    height: 45px;
-    margin-left: 22px;
-    width: 45px;
-  }
-  
+.search-icon2 {
+  display: none;
+}
 
-  
-  .title-box {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2;
-    justify-content: flex-start;
+.search-icon {
+  border: none;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.title-box {
+    grid-template-columns: 100%;
+    grid-template-rows: 90px 45px 50px;
   }
-  
-  .location-post-text {
-    font-size: .7rem;
-  }
-  
-  .location-post-text a {
-    font-size: .6rem;
-  }
-  
+
   .location-post-icon {
-    height: 16px;
+    margin-left: 10px;
   }
-  
-  .open-btn {
-    display: none;
-  }
-  
-  .title-btns-box {
-    margin-left: 5px;
-  }
-  
-  
-  .edit-btn {
+
+  .location-post-text {
     font-size: 1rem;
   }
-  
-  .links-box {
+
+  .title-btns-box {
+    margin-left: 10px;
+  }
+
+  .circles-flex-wrapper {
+    margin-top: 30px;
+  }
+
+.job-descr-header {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+
+.edit-btn {
+display: none;
+  }
+
+  .job-descr-box h2 {
+    font-size: 0.9rem;
+  }
+
+  .job-descr-box {
     display: flex;
     flex-direction: column;
-  }
-  
-  .links-input {
-    width: 97%
-  }
-  
-  .social-icons {
-    left: 46%;
-  }*/
+    justify-content: center;
+}
+
+.job-descr-box h3 {
+    font-size: 0.9rem;
+    margin: 10px;
+    padding: 10px 0px;
+    width: 88%;
+    }
+
+    .job-descr-box p {
+    font-size: 0.9rem;
+    margin: 10px;
+    padding: 10px 0px;
+    width: 88%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
