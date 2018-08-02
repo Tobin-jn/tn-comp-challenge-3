@@ -116,54 +116,54 @@ hr {
 }
 
 .search-icon {
-    align-self: center;
-    border: solid .5px #D6DDE4;
-    height: 26px;
-    justify-self: center;
-    padding: 16px;
-    margin-top: 0px;
-    background-color: #FFF;
-    flex: 1;
-}
-.search-icon2 {
-align-self: center;
-    border: solid .5px #D6DDE4;
-    border-left: hidden;
-    height: 21px;
-    justify-self: center;
-    padding: 19px;
-    margin-top: -1px;
-    background-color: #FFF;
-    flex: 5;
-    color: #D6DDE4;
-    position: relative;
-    text-indent: 30px;
+  align-self: center;
+  border: solid .5px #D6DDE4;
+  height: 26px;
+  justify-self: center;
+  padding: 16px;
+  margin-top: 0px;
+  background-color: #FFF;
+  flex: 1;
 }
 
+.search-icon2 {
+  align-self: center;
+  border: solid .5px #D6DDE4;
+  border-left: hidden;
+  height: 21px;
+  justify-self: center;
+  padding: 19px;
+  margin-top: -1px;
+  background-color: #FFF;
+  flex: 5;
+  color: #D6DDE4;
+  position: relative;
+  text-indent: 30px;
+}
 
 .search-menu {
-    height: 27px;
-    margin-top: -1px;
-    cursor: pointer;
-    flex: 1;
+  height: 27px;
+  margin-top: -1px;
+  cursor: pointer;
+  flex: 1;
 }
 
 
 .search-input {
-flex: 3;
-    font-size: 1rem;
-    height: 56px;
+  flex: 3;
+  font-size: 1rem;
+  height: 56px;
   width: 100%;
-    text-indent: 30px;
-    border: solid .5px #D6DDE4;
+  text-indent: 30px;
+  border: solid .5px #D6DDE4;
 }
 
 .search-img {
-     height: 20px;
-    margin-top: 2px;
-    position: absolute;
-    left: 22px;
-    top: 17px;
+  height: 20px;
+  margin-top: 2px;
+  position: absolute;
+  left: 22px;
+  top: 17px;
 }
 
 
@@ -268,6 +268,11 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.notifications {
+  margin-right: 10px;
+}
+
 
 /*===Graphs============================================*/
 
@@ -719,8 +724,9 @@ a {
   }
   
   .job-descr-box p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
+
 /*========Links=========*/
   
   .links-box {
@@ -934,13 +940,23 @@ a {
     margin: 10px;
     padding: 10px 0px 5px;
     width: 88%;
-    }
+  }
+
+  .hiring-lead-pic {
+    margin: 10px 10px 0px 0px;
+  }
+
+  #hiring-lead-txt {
+    border-top: hidden;
+    display: inline;
+    padding: 0px;
+  }
 
   .job-descr-box p {
     border-top: hidden;
     font-size: 0.9rem;
     margin: 10px;
-    padding: 10px 0px 0px;
+    padding: 0px 20px 0px 0px;
     width: 88%;
-    }
+  }
 }
