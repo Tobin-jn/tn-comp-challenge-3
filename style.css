@@ -291,8 +291,8 @@ a {
 }
 
 .circle-chart {
-  width: 33%;
   justify-content: space-around ;
+  width: 33%;
 }
 
 .circular-chart {
@@ -309,10 +309,10 @@ a {
 }
 
 .circle {
+  animation: progress 1s ease-out forwards;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
 }
 
 @keyframes progress {
@@ -334,19 +334,19 @@ a {
 }
 
 .percentage {
+  color: #535661;
   fill: #666;
   font-family: sans-serif;
   font-size: 0.4em;
   text-anchor: middle;
-  color: #535661;
 }
 
 .graph-text {
+  color: #8C95A4
   fill: #666;
   font-family: sans-serif;
   font-size: 0.15em;
   text-anchor: middle;
-  color: #8C95A4
 }
 
 .bar-graph {
@@ -357,14 +357,13 @@ a {
 
 .graph-button {
   background-color: #FFF;
-  display: block;
-  margin: 10px auto 25px;
-  padding: 10px;
-  font-size: 0.7rem;
   border-radius: 25px;
   border-color: #D6DDE4;
   color: #535661;
-
+  display: block;
+  font-size: 0.7rem;
+  margin: 10px auto 25px;
+  padding: 10px;
 }
 
 .circle-button {
@@ -375,11 +374,11 @@ a {
   grid-column: 2;
 }
 
-
 /*===Description/Links Box=============================*/
 
 .descr-links-box {
   background-color: #EDF2F6;
+  border-top: solid 1px #D6DDE4;
   display: grid;
   grid-auto-columns: 70% 30%;
 }
@@ -392,7 +391,7 @@ a {
   display: grid;
   grid-column: 1;
   grid-template-columns: 30% 70%;
-  margin: 20px 10px 20px 20px;
+  margin: 30px 15px 30px 30px;
 }
 
 /*====header=====*/
@@ -512,16 +511,16 @@ a {
   display: flex;
   flex-direction: column;
   grid-column: 2;
-  margin: 20px 20px 20px 10px;
+  margin: 30px 30px 30px 15px;
 }
 
 .links-input {
-  color: white;
+  border: solid 1px #D6DDE4;
   border-right: hidden;
+  color: white;
   line-height: 2.5;
   margin-bottom: 0px;
   width: 72%;
-  border: solid 1px #D6DDE4;
 }
 
 .link-widg-upload {
@@ -573,8 +572,8 @@ a {
 
 .circle-btn:hover {
   background-color: #B54639;
-  filter: invert(100%);
   border: hidden;
+  filter: invert(100%);
 }
 
 .copy-btn:hover {
@@ -614,8 +613,8 @@ a {
 
 .search-icon:hover {
   background-color: #B54639;
-  filter: invert(100%);
   border: hidden;
+  filter: invert(100%);
 }
 
 .social-media-link:hover {
@@ -628,15 +627,13 @@ a {
 
 .graph-button:hover {
   color: #FFF;
-  background-color: #4AB9C6;
   border: hidden;
+  background-color: #4AB9C6;
 }
 
 .graph-button:focus {
   outline: none;
 }
-
-
 
 
 /*===Media Query======================================*/
@@ -687,7 +684,7 @@ a {
     grid-template-columns: repeat(7, 1fr);
   }
   
- .nav-bar-box p {
+  .nav-bar-box p {
     font-size: 0.9rem;
   }
 /*=======Description Box==========*/
@@ -714,6 +711,7 @@ a {
   
   .job-descr-box {
     grid-template-columns: 40% 60%;
+      margin: 30px 30px 30px 30px;
   }
   
   .job-descr-box h3 {
@@ -768,15 +766,9 @@ a {
 }
 
 
-
-
-
 /*===Media Query======================================*/
 
 @media (max-width: 720px) {
-
-
-  /*====Nav=======*/
 
   .nav-bar-box {
     display: none;
@@ -792,16 +784,16 @@ a {
   }
 
   .mobile-carousel p {
-    text-transform: uppercase;
-    font-size: 1.4rem;
     color: #535661;
     display: inline;
+    font-size: 1.4rem;
+    text-transform: uppercase;
   }
 
   .circle-graphs {
     display: flex;
     flex-direction: column;
-}
+  }
 
   .graph-button {
     display: none;
@@ -853,26 +845,23 @@ a {
   }
 
   .social-media-link {
-    font-size: 1rem;
     display: block;
-    width: 100%;
+    font-size: 1rem;
     margin: 12px 0px 0px 0px;
+    width: 100%;
   }
-  
   
  .link-heading {
     margin: 12px 0px 0px;
     padding: 13px 0px;
   }
 
-
-
   .link-widg-upload {
     height: 17px;
     margin-right: 10px;
   }
 
-.links-box p {
+  .links-box p {
     font-size: 1rem;
     margin: 2px 0px 20px;
   }
@@ -888,19 +877,19 @@ a {
     margin: 0px;
   }
 
-.search-icon2 {
-  display: none;
-}
+  .search-icon2 {
+    display: none;
+  }
 
-.search-icon {
-  border: none;
-}
+  .search-icon {
+    border: none;
+  }
 
-h1 {
-  margin: 15px;
-}
+  h1 {
+    margin: 15px;
+  }
 
-.title-box {
+  .title-box {
     grid-template-columns: 100%;
     grid-template-rows: 90px 45px 50px;
   }
@@ -921,13 +910,13 @@ h1 {
     margin-top: 30px;
   }
 
-.job-descr-header {
+  .job-descr-header {
     grid-template-columns: 100%;
     width: 100%;
   }
 
-.edit-btn {
-display: none;
+  .edit-btn {
+    display: none;
   }
 
   .job-descr-box h2 {
@@ -938,38 +927,20 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+  }
 
-.job-descr-box h3 {
+  .job-descr-box h3 {
     font-size: 0.9rem;
     margin: 10px;
-    padding: 10px 0px;
+    padding: 10px 0px 5px;
     width: 88%;
     }
 
-    .job-descr-box p {
+  .job-descr-box p {
+    border-top: hidden;
     font-size: 0.9rem;
     margin: 10px;
-    padding: 10px 0px;
+    padding: 10px 0px 0px;
     width: 88%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
