@@ -262,18 +262,20 @@ h1 {
 .graphs-box {
   background-color: #EDF2F6;
   grid-column: 1/2;
-  display: flex;
-  flex-direction: row;
 }
 
 /*===Circle Graph====*/
 .circle-graphs {
-  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .circles-flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 75px;
 }
 
 .circle-chart {
@@ -290,7 +292,7 @@ h1 {
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
+  stroke: #d9e4ec;
   stroke-width: 3.8;
 }
 
@@ -335,17 +337,31 @@ h1 {
   color: #8C95A4
 }
 
-.circle-graph-button {
-display: block;
-  margin: 40px auto;
-padding: 15px;
-  font-size: 1rem;
-  border-radius: 25px;
-    border-color: #D6DDE4;
-  color: #535661;
+.bar-graph {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
 }
 
+.graph-button {
+  background-color: #FFF;
+  display: block;
+  margin: 10px auto 25px;
+  padding: 10px;
+  font-size: 0.7rem;
+  border-radius: 25px;
+  border-color: #D6DDE4;
+  color: #535661;
 
+}
+
+.circle-button {
+  grid-column: 1;
+}
+
+.bar-button {
+  grid-column: 2;
+}
 
 /*.graphs {
   border-top: solid 1px #89909C;
@@ -528,6 +544,7 @@ padding: 15px;
 
 .link-copy-box {
   border-bottom: solid 1px black;
+  display: flex;
 }
 
 .input-style::placeholder {
