@@ -438,7 +438,7 @@ a {
 }
 
 .descr-row {
-  border-top: solid 1px #6E7E95;
+  border-top: solid 1px #D6DDE4;
   grid-column: 1/3;
 }
 
@@ -450,12 +450,12 @@ a {
 }
 
 #hiring-lead-txt {
-  border-top: solid 1px #6E7E95;
+  border-top: solid 1px #D6DDE4;
   display: inline;
 }
 
 .job-descr-box h3 {
-  border-top: solid 1px #6E7E95;
+  border-top: solid 1px #D6DDE4;
   color: #6E7E95;
   font-size: 0.9rem;
   grid-column: 1/2;
@@ -465,7 +465,7 @@ a {
 }
 
 .job-descr-box p {
-  border-top: solid 1px #6E7E95;
+  border-top: solid 1px #D6DDE4;
   color: #6E7E95;
   font-size: 0.9rem;
   grid-column: 2/3;
@@ -641,7 +641,7 @@ a {
 
 /*===Media Query======================================*/
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
 
   .parent-container {
     display: flex;
@@ -773,12 +773,8 @@ a {
 
 /*===Media Query======================================*/
 
-@media (max-width: 650px) {
+@media (max-width: 720px) {
 
-
-
-  /*===search=====*/
-  
 
   /*====Nav=======*/
 
@@ -787,21 +783,27 @@ a {
   }
 
   .mobile-carousel {
-    font-size: 1rem;
-    border: black;
+    display: block;
+    margin: 20px 20px 30px 20px;
   }
 
    .mobile-carousel img{
     height: 20px;
-    
   }
 
-/*  .circle-graphs {
+  .mobile-carousel p {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #535661;
+    display: inline;
+  }
+
+  .circle-graphs {
     display: flex;
     flex-direction: column;
-  }*/
+}
 
-  .circle-button {
+  .graph-button {
     display: none;
   }
   
@@ -842,36 +844,34 @@ a {
     font-size: 1.1rem;
   }
 
-  .btn-text {
-    display: none;
+   .links-box {
+    display: flex;
+    flex-direction: column;
   }
-  
-  .social-icons {
-    height: 31px;
-    left: 40%;
-    position: block;
-    top: 9px;
-  }
-  
-  .link-widg-upload {
-    height: 18px;
-    margin-right: 8px;
-  }
-  
-  .link-heading {
-    font-size: 1.2rem;
-    grid-row: 2;
-    margin: 5px 0px 5px;
-    padding: 6px;
-  }
-  
-  .links-input {
-    line-height: 3;
-  }
-  
-  .input-style::placeholder {
+
+  .social-media-link {
     font-size: 1rem;
-    text-indent: 5px;
+    display: block;
+    width: 100%;
+    margin: 12px 0px 0px 0px;
+  }
+  
+  
+ .link-heading {
+    margin: 12px 0px 0px;
+    padding: 13px 0px;
+  }
+
+
+
+  .link-widg-upload {
+    height: 17px;
+    margin-right: 10px;
+  }
+
+.links-box p {
+    font-size: 1rem;
+    margin: 2px 0px 20px;
   }
 }
 
