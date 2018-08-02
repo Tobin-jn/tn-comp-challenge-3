@@ -12,6 +12,9 @@ body {
 }
 
 /*==Sidebar===========================================*/
+.mobile-carousel {
+  display: none;
+}
 
 h4 {
   color: #FFFFFF;
@@ -162,52 +165,6 @@ flex: 3;
     left: 22px;
     top: 17px;
 }
-/*.div-search-btns {
-  border-left: solid .5px #89909C;
-  cursor: pointer;
-
-}*/
-
-
-/*.search-box {
-
-  display: flex;
- 
-}
-
-.search-icon {
-    align-self: center;
-    border: solid .5px #D6DDE4;
-    height: 26px;
-    justify-self: center;
-    padding: 16px;
-    margin-top: 0px;
-    background-color: #FFF;
-}
-
-
-.search-menu {
-    height: 27px;
-    margin-top: -5px;
-    cursor: pointer;
-}
-
-
-.search-input {
-    border: hidden;
-    font-size: 1rem;
-    height: 56px;
-    text-indent: 30px;
-    border: solid .5px #D6DDE4;
-}*/
-
-/*.search-input::placeholder {
-  background-image: url(images/search-gray.png);
-  background-repeat: no-repeat;
-  font-size: 1rem;
-  height: 40px;
-  text-indent: 30px;
-}*/
 
 
 /*==Title Box=========================================*/
@@ -295,24 +252,21 @@ a {
 /*==Navigation Bar=====================================*/
 
 .nav-bar-box {
-    display: grid;
-    grid-column: 1/2;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 60px;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-column: 1/2;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 60px;
+  justify-items: center;
+  align-items: center;
 }
 
 .nav-bar-box p {
-    /* border-bottom: solid 1px #FFFFFF; */
-    color: #535661;
-    cursor: pointer;
-    padding-bottom: 10px;
-    /* font-size: 0.9rem; */
-    font-weight: bold;
-    /* padding-bottom: 14px; */
-    /* margin-bottom: 10px; */
-    text-transform: uppercase;
+  color: #535661;
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-size: 0.9rem; 
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /*===Graphs============================================*/
@@ -822,22 +776,34 @@ a {
 @media (max-width: 650px) {
 
 
+
   /*===search=====*/
   
-/*  .search-box {
-    display: grid;
-    grid-template-columns: 60% 40%;
+
+  /*====Nav=======*/
+
+  .nav-bar-box {
+    display: none;
   }
 
-  
-  .search-input {
-    grid-column: 1;
-    width: 100%;
+  .mobile-carousel {
+    font-size: 1rem;
+    border: black;
   }
-  
-  .div-search-btns {
-    grid-column: 2;
+
+   .mobile-carousel img{
+    height: 20px;
+    
+  }
+
+/*  .circle-graphs {
+    display: flex;
+    flex-direction: column;
   }*/
+
+  .circle-button {
+    display: none;
+  }
   
   .job-descr-box {
     margin: 20px 20px 20px 20px;
