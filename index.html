@@ -5,6 +5,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta content="width=device-width, initial-scale=1" name="viewport">
   </head>
   <body>
@@ -51,20 +52,36 @@
       </aside>
       <article class="content-box">
 <!-- SearchBar -->
-        <section class="search-box">
+<!--         <section class="search-box">
           <img alt="Menu Icon" class="search-menu search-icon" src=
           "images/menu-gray.png">
           <form>
             <input class="search-input" name="search" placeholder=
             "Search for a job" type="text">
           </form>
-          <div aria-label="Buttons for search functionality" class=
-          "div-search-btns"><img alt="Plus One Icon" class="search-icon plusone"
-          src="images/plusone-gray.png"> <img alt="Schedule Icon" class=
-          "search-icon schedule" src="images/schedule-gray.png"> <img alt="Schedule Icon"
-          "Menu Grid Icon" class="search-icon menu-grid" src=
-          "images/menugrid-gray.png"></div>
-        </section>
+           <div aria-label="Buttons for search functionality" class=
+          "div-search-btns"> -->
+<!--           <div class="flex-icon"><img alt="Plus One Icon" class="search-icon plusone"
+          src="images/plusone-gray.png"></div>
+          <div class="flex-icon"><img alt="Schedule Icon" class=
+          "search-icon schedule" src="images/schedule-gray.png"></div>
+          <div class="flex-icon"><img alt="Schedule Icon"
+          "Menu Grid Icon" class="search-icon menu-grid" src= "images/menugrid-gray.png"></div>
+        </section> --> 
+<section class="search-box">
+<div class="flex-icon"><img class="search-menu search-icon" src="images/menu-gray.png"></div>
+<!-- <form>
+  <input class="search-input" name="search" placeholder="Search for a job" type="text">
+</form> -->
+ <p class="search-icon2"><img class="search-img" src="images/search-gray.png"> Search for a job</p>
+<div class="flex-icon"><img class="search-icon plusone" src="images/plusone-gray.png"></div>
+ <div class="flex-icon"><img class="search-icon schedule" src="images/schedule-gray.png"></div>
+<div class="flex-icon"><img class="search-icon menu-grid" src= "images/menugrid-gray.png"></div>
+</section>
+
+
+
+
         <div aria-label="Container for mobile styling" class="mobile-container">
 <!-- Page Title -->
           <section class="title-box">
@@ -96,18 +113,94 @@
             <p class="menu-option broadcast">Broadcast</p>
             <p class="menu-option notifications">Notifications</p>
           </section>
+
+<section class="mobile-carousel">
+  <img src="images/previous.png">
+  <p class="menu-option summary">Summary</p>
+  <img src="images/next.png">
+</section>
+
         </div>
 <!-- Graphs -->
         <section class="graphs-box">
-          <img alt="Circle and Bar Graphs" class="graphs" src=
+
+
+
+<div class="circle-graphs">
+  <div class="circles-flex-wrapper">
+  
+      <div class="circle-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart green">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="75, 100"
+            d="M18 33.9155
+              a 15.9155 15.9155 0 0 1 0 -31.831
+              a 15.9155 15.9155 0 0 1 0 31.831"
+          />
+          <text x="18" y="18" class="percentage">3,154</text>
+          <text x="18" y="23" class="graph-text">APPLICANTS</text>
+        </svg>
+      </div>
+      <div class="circle-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="38, 100"
+            d="M18 33.9155
+              a 15.9155 15.9155 0 0 1 0 -31.831
+              a 15.9155 15.9155 0 0 1 0 31.831"
+          />
+          <text x="18" y="18" class="percentage">1546</text>
+          <text x="18" y="23" class="graph-text">INTERVIEWS</text>
+        </svg>
+      </div>
+      <div class="circle-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart purple">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="20, 100"
+            d="M18 33.9155
+              a 15.9155 15.9155 0 0 1 0 -31.831
+              a 15.9155 15.9155 0 0 1 0 31.831"
+          />
+          <text x="18" y="18" class="percentage">912</text>
+          <text x="18" y="23" class="graph-text">FORWARDS</text>
+        </svg>
+      </div>
+  </div>
+
+  <img class="bar-graph" alt="Bar Graphs" 
+          src="images/bar-graph.jpeg">
+
+  <button class="graph-button circle-button">TOTALS &#8226 Out of 5,231 Views</button>
+
+  <button class="graph-button bar-button">APPLICANTS/DAY</button>
+</div>
+
+
+
+
+<!--           <img alt="Circle and Bar Graphs" class="graphs" src=
           "images/graphs.jpeg">
           <hr class="graphs-hr">
           <img alt="Circle Graphs" class="circle-graph" src=
-          "images/circle-graph.jpeg"> <img alt="Bar Graphs" class="bar-graph"
-          src="images/bar-graph.jpeg">
+          "images/circle-graph.jpeg">  -->
         </section>
-        <section class="descr-links-box">
 <!-- Job Description -->
+        <section class="descr-links-box">
           <section class="job-descr-box">
             <div aria-label="Header for Job Description" class=
             "job-descr-header">
@@ -139,15 +232,16 @@
 
 <!-- Links -->
           <section class="links-box">
-            <button class="social-media-link facebook"><img class="social-icons"
-            src="images/facebook.png"><span class="btn-text">Post to
-            Facebook</span></button> <button class=
-            "social-media-link twitter"><img class="social-icons" src=
-            "images/twitter.png"><span class="btn-text">Tweet this
-            Job</span></button> <button class=
-            "social-media-link linkedin"><img class="social-icons" src=
-            "images/linkedin.png"><span class="btn-text">Post to
-            Linkedin</span></button>
+
+<!--             <div class="social-media-box"> -->
+              <button class="social-media-link facebook"><img class="social-icons" src="images/facebook.png"><span class="btn-text">Post to Facebook</span></button> 
+              <button class="social-media-link twitter"><img class="social-icons" src=
+              "images/twitter.png"><span class="btn-text">Tweet this Job</span></button> 
+              <button class=
+              "social-media-link linkedin"><img class="social-icons" src=
+              "images/linkedin.png"><span class="btn-text">Post to Linkedin</span></button>
+<!--             </div> -->
+
             <h3 class="link-heading"><img alt="Link Icon" class=
             "link-widg-upload" src="images/link-gray.png">Link to this Job</h3>
             <p class="link-body">Capitalize on low hanging fruit to identify a
@@ -172,7 +266,7 @@
             Email</h3>
             <p class="link-body">Capitalize on low hanging fruit to identify a
             ballpark value added activity to beta test.</p>
-            <form>
+            <form class="link-copy-box">
               <input class="email-input input-style" name="Email Input"
               placeholder='tomtizzy@gmail.com' type="email">
             </form>
